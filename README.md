@@ -9,7 +9,7 @@ A tool to handle infos on AWA (AlienwareArena).
 - Displays **Current Equipped Artifacts** along with **Equip Status and FAQ** towards usual Artifact/Fragments Issues.
 - Don't want to miss any events going on? Details Tab includes all **on-going tasks and progress** you need to check.
 - Have Question about AWA? Where did the Tier Info go? Don't want to bookmark or checkWeb Archive anymore?
-　
+⠀
 Info Tab arrives with the knowledge you're asking for, with **common issues that could be encountered and useful links** for different usages.
 
 ![image](https://github.com/user-attachments/assets/a87b435e-258e-43c3-9b9e-ab0fc1305b01)
