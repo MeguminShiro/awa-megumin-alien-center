@@ -4,7 +4,9 @@
 
 A tool to handle infos on AWA (AlienwareArena).
 
-### ✨ Features｜
+![image](https://github.com/user-attachments/assets/5c53f7ed-153b-4283-89c5-8dc5f950291f)
+
+## ✨ Features
 - **Small collapsible widget** that shows on all AWA site your **current Tier/ARP/LIFETIME ARP**.
 - Displays **Current Equipped Artifacts** along with **Equip Status and FAQ** towards usual Artifact/Fragments Issues.
 - Don't want to miss any events going on? Details Tab includes all **on-going tasks and progress** you need to check.
@@ -12,6 +14,6 @@ A tool to handle infos on AWA (AlienwareArena).
 ⠀
 Info Tab arrives with the knowledge you're asking for, with **common issues that could be encountered and useful links** for different usages.
 
-![image](https://github.com/user-attachments/assets/a87b435e-258e-43c3-9b9e-ab0fc1305b01)
-![image](https://github.com/user-attachments/assets/6ab85cd8-c3fe-43ee-8883-62c2f4e00843)
-![image](https://github.com/user-attachments/assets/c7b97a47-8277-43e3-806b-e101cf7d2971)
+## 📋 How to use it?
+- Download from [latest release](https://github.com/MeguminShiro/awa-megumin-alien-center/releases) .crx file, decompress/unzip it.
+- On chrome://extensions/ , enable **Developer Mode** and click **Load unpacked** button, select the decompressed/unziped folder.
