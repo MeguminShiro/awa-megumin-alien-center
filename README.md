@@ -16,4 +16,7 @@ Info Tab arrives with the knowledge you're asking for, with **common issues that
 
 ## 📋 How to use it?
 - Download from [latest release](https://github.com/MeguminShiro/awa-megumin-alien-center/releases) .crx file, decompress/unzip it.
-- On chrome://extensions/ , enable **Developer Mode** and click **Load unpacked** button, select the decompressed/unziped folder.
+- On Browser Extension page, enable **Developer Mode** and click **Load unpacked** button, select the decompressed/unziped folder.
+
+## 🔮 Upcoming Updates
+- Releasing on Firefox Extensions Store. (Still awaiting for approval)
