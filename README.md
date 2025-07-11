@@ -21,3 +21,4 @@ Info Tab arrives with the knowledge you're asking for, with **common issues that
 ## 🔮 Upcoming Updates
 - Releasing on Firefox Extensions Store. (Still awaiting for approval)
 - Start widget as minimized state.
+- Add Mini-Tour to explain how the widget works and each sector.
