@@ -19,6 +19,8 @@ Info Tab arrives with the knowledge you're asking for, with **common issues that
 - On Browser Extension page, enable **Developer Mode** and click **Load unpacked** button, select the decompressed/unziped folder.
 
 ## 🔮 Upcoming Updates
-- Releasing on Firefox Extensions Store. (Still awaiting for approval)
+- Releasing on Firefox Extension Store. (Still awaiting for approval)
+- Releasing On Edge Extension Store. (Still checking info)
 - Start widget as minimized state.
 - Add Mini-Tour to explain how the widget works and each sector.
+- New update check-in from the extension itself.
