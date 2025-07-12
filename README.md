@@ -19,8 +19,10 @@ Info Tab arrives with the knowledge you're asking for, with **common issues that
 - On Browser Extension page, enable **Developer Mode** and click **Load unpacked** button, select the decompressed/unziped folder.
 
 ## 🔮 Upcoming Updates
-- Releasing on Firefox Extension Store. (Still awaiting for approval)
+- Releasing on Firefox Extension Store. (Still awaiting for approval, going to release unofficial .xpi)
 - Releasing On Edge Extension Store. (Still checking info)
 - Start widget as minimized state.
 - Add Mini-Tour to explain how the widget works and each sector.
 - New update check-in from the extension itself.
+- Disable tool if user isn't logged in AWA site.
+- Add Optional feature as Weekly Steam Artifact Swap or Game Vault Discount Artifact Swap Reminders.
