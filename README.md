@@ -18,12 +18,12 @@ Info Tab arrives with the knowledge you're asking for, with **common issues that
 - Download from [latest release](https://github.com/MeguminShiro/awa-megumin-alien-center/releases) .crx file, decompress/unzip it.
 - On Browser Extension page, enable **Developer Mode** and click **Load unpacked** button, select the decompressed/unziped folder.
 
-## 🔮 Upcoming Updates
-- Releasing on Firefox Extension Store. (Still awaiting for approval, going to release unofficial .xpi)
-- Releasing On Edge Extension Store. (Still checking info)
-- Start widget as minimized state.
-- Add Mini-Tour to explain how the widget works and each sector.
-- New update check-in from the extension itself.
-- Disable tool if user isn't logged in AWA site.
-- Add Optional feature as Weekly Steam Artifact Swap or Game Vault Discount Artifact Swap Reminders.
-- Add Language support for Spanish, Traditional Chinese, Portuguese.
+## 🔮 Upcoming Updates v0.1
+- [x] Releasing on Firefox Extension Store. (Still awaiting for approval)
+- [ ] Add Language support for Spanish, Traditional Chinese, Portuguese.
+- [ ] Add Mini-Tour to explain how the widget works and each sector.
+- [ ] Add Optional feature as Weekly Steam Artifact Swap or Game Vault Discount Artifact Swap Reminders.
+- [ ] Disable tool if user isn't logged in AWA site.
+- [ ] New update check-in from the extension itself.
+- [ ] Releasing On Edge Extension Store. (Still checking info)
+- [ ] Start widget as minimized state.
