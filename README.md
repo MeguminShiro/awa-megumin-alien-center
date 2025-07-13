@@ -26,3 +26,4 @@ Info Tab arrives with the knowledge you're asking for, with **common issues that
 - New update check-in from the extension itself.
 - Disable tool if user isn't logged in AWA site.
 - Add Optional feature as Weekly Steam Artifact Swap or Game Vault Discount Artifact Swap Reminders.
+- Add Language support for Spanish, Traditional Chinese, Portuguese.
