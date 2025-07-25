@@ -19,11 +19,14 @@ Info Tab arrives with the knowledge you're asking for, with **common issues that
 - On Browser Extension page, enable **Developer Mode** and click **Load unpacked** button, select the decompressed/unziped folder.
 
 ## 🔮 Upcoming Updates v0.1
-- [x] Releasing on Firefox Extension Store. (Still awaiting for approval)
+- [x] Add ⚙️﻿ Options Panel.
+- [x] Add Optional feature as Weekly Steam Artifact Swap or Game Vault Discount Artifact Swap Reminders.
+- [x] Disable tool if user isn't logged in AWA site.
+- [x] Releasing on Firefox Extension Store.
+- [x] Start widget as minimized state.
+- [x] Update Community Event timer with the current change of 1 hour update instead of 3 hours, hence the end time being incremented by 2 extra hours.
+- [x] Update display for Equipped Artifacts for easier reading.
 - [ ] Add Language support for Spanish, Traditional Chinese, Portuguese.
 - [ ] Add Mini-Tour to explain how the widget works and each sector.
-- [ ] Add Optional feature as Weekly Steam Artifact Swap or Game Vault Discount Artifact Swap Reminders.
-- [ ] Disable tool if user isn't logged in AWA site.
 - [ ] New update check-in from the extension itself.
 - [ ] Releasing On Edge Extension Store. (Still checking info)
-- [ ] Start widget as minimized state.
