@@ -1,0 +1,27 @@
+{
+  "latest": "1.0.0",
+  "changelog": {
+    "Features": [
+      "Draggable Widget: Reposition freely, with saved location across sessions",
+      "Optional reminders for Weekly Steam Artifact Swap and Game Vault Discount Artifact Swap",
+      "Language selector for choosing display language",
+      "Built‑in update checker with banner and notifications",
+      "Mini‑tour to guide new users through the widget"
+    ],
+    "Improvements": [
+      "Tool now disables automatically when user is not logged in to AWA",
+      "Widget starts minimized by default",
+      "Community Event timer now refreshes every 1 hour (instead of 3), with precise end‑time tracking",
+      "Details tab timers (Game Vault, SCE, PAC) now sync with server data",
+      "Equipped Artifacts display redesigned for easier reading",
+      "Added language support: Spanish, Traditional Chinese, Portuguese, Japanese, French",
+      "FAQ section refreshed for improved readability"
+    ],
+    "Fixes": [
+      "Updated detection of Discord Artifact",
+      "Resolved Community Event and Promotional Advent Calendar detection issues caused by site structure changes"
+    ]
+  },
+  "url": "https://github.com/MeguminShiro/awa-megumin-alien-center/releases/tag/v1.0.0",
+  "releaseDate": "2025-09-30"
+}
