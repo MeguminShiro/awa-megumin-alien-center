@@ -1,30 +1,10 @@
 {
-  "latest": "1.0.0",
+  "latest": "1.0.1",
   "changelog": {
-    "✨ Features": [
-      "ARP Log                    ｜ Redesigned for friendlier navigation and better organization",
-      "Community GA Checker       ｜ Detect Blind Auction or Sweepstakes types and track entered status",
-      "Draggable Widget           ｜ Move and reposition freely, with location saved across sessions",
-      "GA List                    ｜ Browse all giveaways with real‑time status (claimed, out of stock, or available)",
-      "Game Vault Info            ｜ Monthly list with discounted prices tailored to your percentage",
-      "Language Selector          ｜ Choose your preferred display language",
-      "Smart Reminders            ｜ Optional alerts for Weekly Steam Artifact Swap and Game Vault Discount Swap",
-      "Update Checker             ｜ Built‑in banner and notifications to keep you updated"
-    ],
-    "🔧 Improvements": [
-      "Artifact Display           ｜ Equipped Artifacts redesigned for easier readability",
-      "Auto‑Disable               ｜ Tool now turns off automatically when not logged into AWA",
-      "Community Event Timer      ｜ Refreshes hourly (instead of every 3 hours) with precise end‑time tracking",
-      "Details Tab Sync           ｜ Timers (Game Vault, SCE, PAC) now align with server data",
-      "Expanded Language Support  ｜ Spanish, Portuguese, Traditional Chinese, Japanese, and French added",
-      "FAQ Section                ｜ Refreshed for clarity and improved readability",
-      "Widget Behavior            ｜ Starts minimized by default for a cleaner workspace"
-    ],
     "🐞 Fixes": [
-      "Discord Artifact Detection ｜ Updated for accurate recognition",
-      "Event & Calendar Detection ｜ Resolved issues caused by site structure changes"
+      "ARP Log & Game Vault Detection ｜ Fixed detection issue for non-NA region users."
     ]
   },
-  "url": "https://github.com/MeguminShiro/awa-megumin-alien-center/releases/tag/v1.0.0",
+  "url": "https://github.com/MeguminShiro/awa-megumin-alien-center/releases/tag/v1.0.1",
   "releaseDate": "2025-12-16"
 }
