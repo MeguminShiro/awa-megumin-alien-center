@@ -1,10 +1,15 @@
 {
-  "latest": "1.0.1",
+  "latest": "1.1.0",
   "changelog": {
+    "✨ Features": [
+      "Default Tab Selector ｜ Choose your preferred display language",
+      "Update Checker       ｜ Built‑in banner and notifications to keep you updated"
+    ],
     "🐞 Fixes": [
-      "ARP Log & Game Vault Detection ｜ Fixed detection issue for non-NA region users."
+      "Achievements         ｜ Fixed issue where Widget content will replace the New Achievements page content.",
+      "Equipped Artifacts   ｜ Added alternate method for achieving timer feature due to site structure changed, including solving Artifacts locked more than 24 hours."
     ]
   },
-  "url": "https://github.com/MeguminShiro/awa-megumin-alien-center/releases/tag/v1.0.1",
-  "releaseDate": "2025-12-16"
+  "url": "https://github.com/MeguminShiro/awa-megumin-alien-center/releases/tag/v1.1.0",
+  "releaseDate": "2025-12-21"
 }
