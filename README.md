@@ -17,5 +17,5 @@ A tool to handle infos on AWA (AlienwareArena).
 - Download from [latest release](https://github.com/MeguminShiro/awa-megumin-alien-center/releases) .crx file, decompress/unzip it.
 - On Browser Extension page, enable **Developer Mode** and click **Load unpacked** button, select the decompressed/unziped folder.
 
-## 🔮 Upcoming Updates v1.0.2
+## 🔮 Upcoming Updates v1.1.1
 - [ ] Add Mini-Tour to explain how the widget works and each sector.
