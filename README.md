@@ -19,3 +19,4 @@ A tool to handle infos on AWA (AlienwareArena).
 
 ## 🔮 Upcoming Updates v1.1.1
 - [ ] Add Mini-Tour to explain how the widget works and each sector.
+- [ ] Add New Achievements list for better organization and checkings.
