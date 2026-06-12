@@ -1,8 +1,16 @@
 {
-  "chosenTime": "2026-05-22T18:00:00Z",
   "promoStart": "2026-03-13T00:00:00Z",
   "promoTime":  "2026-03-14T00:00:00Z",
-  "SCEStart":   "2026-04-28T00:00:00Z",
-  "SCETime":    "2026-05-13T00:00:00Z",
-  "SCELinkBase":"https://alienwarearena.com/steam/community-event/infinity-nikki-community-event"
+  "communityEvents": [
+    {
+      "start": "2026-06-04T14:00:00Z",
+      "end": "2026-06-13T00:00:00Z",
+      "link": "https://alienwarearena.com/steam/community-event/path-of-exile-community-event-3"
+    },
+    {
+      "start": "2026-06-04T14:00:00Z",
+      "end": "2026-06-13T00:00:00Z",
+      "link": "https://alienwarearena.com/steam/community-event/warframe-community-event-6"
+    }
+  ]
 }
