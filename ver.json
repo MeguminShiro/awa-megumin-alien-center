@@ -1,11 +1,23 @@
 {
-  "latest": "1.1.1",
+  "latest": "2.0.0",
   "changelog": {
+    "✨ Features": [
+      "Achievements         ｜ Check your Achievement progress all in one place.",
+      "Marketplace          ｜ Check all ongoing Artifact & Marketplace & Premium Rewards Info with expiration timer.",
+      "Watch Twitch List    ｜ Built‑in channel live checker and redirection to stream channel directly."
+    ],
     "🐞 Fixes": [
-      "ARP Log & Game Vault Detection ｜ Fixed detection issue for non-NA region users.",
-      "Links                          ｜ Switched all links to people's current regional based."
+      "Community Event List ｜ Updated detection for multiple events and milestone progress",
+      "Community GA & GA    ｜ Faster loading and less memory usage for checking.",
+      "Daily Quest Revamp   ｜ Updated detection due to Cataboom (Minigames) retirement.",
+      "FAQ Section Revamp   ｜ Removed obsolete infos and added newer ones.",
+      "Game Vault Detection ｜ Added Countdown timer & Fixed detection issue due to site CKEditor issue.",
+      "Promotional Calendar ｜ Separated from the newer Weekly Calendar appearance.",
+      "Steam Quest Revamp   ｜ Updated detection due to site structure changes.",
+      "UI Redesign          ｜ Switched to a better readable and a little modern format display.",
+      "Widget Size Position ｜ Added Custom size and fixed out of border issue (so it'll remain in screen)."
     ]
   },
-  "url": "https://github.com/MeguminShiro/awa-megumin-alien-center/releases/tag/v1.1.1",
-  "releaseDate": "2025-12-21"
+  "url": "https://github.com/MeguminShiro/awa-megumin-alien-center/releases/tag/v2.0.0",
+  "releaseDate": "2026-06-20"
 }
