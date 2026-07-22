@@ -1,0 +1,11 @@
+{
+  "name": "awa-ga-s",
+  "version": "0.0.1",
+  "description": "AWA GA cache",
+  "main": "awaga.js",
+  "scripts": {
+    "start": "node awaga.js"
+  },
+  "dependencies": {},
+  "type": "module"
+}
