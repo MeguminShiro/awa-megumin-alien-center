@@ -20,8 +20,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Run Scraper
-        run: node scraper.js
+      - name: Run AWAGAS
+        run: node awaga.js
 
       - name: Commit and Push Changes
         run: |
