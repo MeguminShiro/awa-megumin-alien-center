@@ -1,5 +1,6 @@
 import fs from 'fs/promises';
 import path from 'path';
+
 function cleanTitle(raw) {
     if (!raw) return '';
     let title = raw.replace(/ Key Giveaway$/i, '').replace(/ Giveaway$/i, '').trim();
@@ -17,6 +18,7 @@ function cleanTitle(raw) {
     if (lower.includes('steam')) return '🎮 ' + title;
     if (lower.includes('dlc') || lower.includes('pack') || lower.includes('package')) return '🧧 ' + title;
     return '🎁 ' + title;}
+
 function parseTierArp(item) {
     const text = ((item.description || '') + ' ' + (item.instructions || '')).trim();
     const arpMatch = text.match(/(?:spending|redeeming|costs?|requires(?: redeeming)?)\s*(\d+)\s*ARP/i)
@@ -34,6 +36,7 @@ function parseTierArp(item) {
         const num = String(fallback).match(/\d+/);
         tier = num ? num[0] + '+' : '1+';}
     return { tier, arp };}
+
 async function fetchGiveaways() {
     let page = 1;
     const MAX_PAGES = 100;
@@ -51,15 +54,14 @@ async function fetchGiveaways() {
             if (item.url) { delete item.url; changed = true; }
             if (item.type) { delete item.type; changed = true; }
             if (item.status) { delete item.status; changed = true; }
-            if (item.id !== undefined) { delete item.id; changed = true; }
-            if (item.tier === 0 || item.tier === '0') { delete item.tier; changed = true; }
-            if (item.arp === 0 || item.arp === '0') { delete item.arp; changed = true; }
             const newTitle = cleanTitle(item.title.replace(/^[🎮🧧🎁]\s*(?:(?:Steam|DLC|Epic Games)｜)?/i, '').replace(/｜.*$/, ''));
             if (item.title !== newTitle) { item.title = newTitle; changed = true; }
             if (changed) migratedCount++;}
     } catch (e) {}
+    
     const fullScanDone = existingData.initial_scan_complete === true;
     let newCount = 0;
+    
     while (page <= MAX_PAGES) {
         try {
             const url = 'https://na.alienwarearena.com/esi/featured-tile-data/Giveaway/' + page;
@@ -81,14 +83,15 @@ async function fetchGiveaways() {
                 foundNewOnThisPage = true;
                 newCount++;
                 const { tier, arp } = parseTierArp(item);
-                const entry = { title: cleanTitle(item.title || item.name) };
-                if (tier && tier !== '0' && tier !== '0+') entry.tier = tier;
-                if (arp && arp !== '0' && arp !== '0 ARP') entry.arp = arp;
+                const entry = { id: item.id, title: cleanTitle(item.title || item.name) };
+                if (tier) entry.tier = tier;
+                if (arp) entry.arp = arp;
                 existingData.giveaways[item.id] = entry;}
             if (fullScanDone && !foundNewOnThisPage) break;
             page++;
             await new Promise(r => setTimeout(r, 1000));
         } catch (err) {break;}}
+            
     const outputData = {
         last_updated: Date.now(),
         total: Object.keys(existingData.giveaways).length,
