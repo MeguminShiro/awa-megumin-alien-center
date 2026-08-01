@@ -3,7 +3,22 @@ import path from 'path';
 
 function cleanTitle(raw) {
     if (!raw) return '';
-    return raw.replace(/ Key Giveaway$/i, '').replace(/ Giveaway$/i, '').trim();}
+    let title = raw.replace(/ Key Giveaway$/i, '').replace(/ Giveaway$/i, '').trim();
+    if (title.endsWith(' Steam Playtest')) return '🎮 Steam｜' + title.replace(/ Steam Playtest$/i, '') + ' Playtest';
+    if (title.endsWith(' Steam Game Key')) return '🎮 Steam｜' + title.replace(/ Steam Game Key$/i, '');
+    if (title.endsWith(' Steam Game')) return '🎮 Steam｜' + title.replace(/ Steam Game$/i, '');
+    if (title.endsWith(' Steam')) return '🎮 Steam｜' + title.replace(/ Steam$/i, '');
+    if (title.endsWith(' DLC')) return '🧧 DLC｜' + title.replace(/ DLC$/i, '');
+    if (title.match(/ Epic Games?$/i)) return '🎮 Epic Games｜' + title.replace(/ Epic Games?$/i, '');
+    if (title.endsWith(' Exclusive Alienware Game Pack')) return '🧧 ' + title.replace(/ Exclusive Alienware Game Pack$/i, '') + '｜Exclusive Alienware Game Pack';
+    if (title.endsWith(' Exclusive Game Pack')) return '🧧 ' + title.replace(/ Exclusive Game Pack$/i, '') + '｜Exclusive Game Pack';
+    if (title.endsWith(' Alienware Game Pack')) return '🧧 ' + title.replace(/ Alienware Game Pack$/i, '') + '｜Alienware Game Pack';
+    if (title.endsWith(' Game Pack')) return '🧧 ' + title.replace(/ Game Pack$/i, '') + '｜Game Pack';
+    let lower = title.toLowerCase();
+    if (lower.includes('steam')) return '🎮 ' + title;
+    if (lower.includes('dlc') || lower.includes('pack') || lower.includes('package')) return '🧧 ' + title;
+    return '🎁 ' + title;}
+
 function parseTierArp(item) {
     const text = ((item.description || '') + ' ' + (item.instructions || '')).trim();
     const arpMatch = text.match(/(?:spending|redeeming|costs?|requires(?: redeeming)?)\s*(\d+)\s*ARP/i)
@@ -21,6 +36,7 @@ function parseTierArp(item) {
         const num = String(fallback).match(/\d+/);
         tier = num ? num[0] + '+' : '1+';}
     return { tier, arp };}
+
 async function fetchGiveaways() {
     let page = 1;
     const MAX_PAGES = 100;
@@ -31,14 +47,21 @@ async function fetchGiveaways() {
         const fileContent = await fs.readFile(jsonFile, 'utf8');
         existingData = JSON.parse(fileContent);
         if (!existingData.giveaways) existingData.giveaways = {};
-        console.log('Loaded ' + Object.keys(existingData.giveaways).length + ' existing GAs.');
-    } catch (e) {console.log('❌ No List found. Starting New.');}
+        let migratedCount = 0;
+        for (const id in existingData.giveaways) {
+            let item = existingData.giveaways[id];
+            let changed = false;
+            if (item.url) { delete item.url; changed = true; }
+            if (item.type) { delete item.type; changed = true; }
+            if (item.status) { delete item.status; changed = true; }
+            const newTitle = cleanTitle(item.title.replace(/^[🎮🧧🎁]\s*(?:(?:Steam|DLC|Epic Games)｜)?/i, '').replace(/｜.*$/, ''));
+            if (item.title !== newTitle) { item.title = newTitle; changed = true; }
+            if (changed) migratedCount++;}
+    } catch (e) {}
+    
     const fullScanDone = existingData.initial_scan_complete === true;
-    if (fullScanDone) {
-        console.log('☑️ Initial scan complete. Checking new GAs…');
-    } else {
-        console.log('⚠️ Initial scan NOT COMPLETE. Fetching all pages…');}
     let newCount = 0;
+    
     while (page <= MAX_PAGES) {
         try {
             const url = 'https://na.alienwarearena.com/esi/featured-tile-data/Giveaway/' + page;
@@ -51,10 +74,8 @@ async function fetchGiveaways() {
             const data = await res.json();
             const items = Array.isArray(data) ? data : (data.data || []);
             if (items.length === 0) {
-                console.log('Page ' + page + ' is empty. Reached the end.');
                 if (!fullScanDone) {
-                    existingData.initial_scan_complete = true;
-                    console.log('✅ Initial scan COMPLETED.');}
+                    existingData.initial_scan_complete = true;}
                 break;}
             let foundNewOnThisPage = false;
             for (const item of items) {
@@ -66,24 +87,17 @@ async function fetchGiveaways() {
                 if (tier) entry.tier = tier;
                 if (arp) entry.arp = arp;
                 existingData.giveaways[item.id] = entry;}
-            if (fullScanDone && !foundNewOnThisPage) {
-                console.log('Page ' + page + ' has no new GAs. Stopping early.');
-                break;}
-            console.log('Page ' + page + ': ' + (foundNewOnThisPage ? 'found new GAs' : 'no new, continuing full scan') + '.');
+            if (fullScanDone && !foundNewOnThisPage) break;
             page++;
             await new Promise(r => setTimeout(r, 1000));
-        } catch (err) {
-            console.log('Error on page ' + page + '. Stopping.');
-            break;}}
-    if (newCount > 0 || existingData.initial_scan_complete !== fullScanDone) {
-        const outputData = {
-            last_updated: Date.now(),
-            total: Object.keys(existingData.giveaways).length,
-            initial_scan_complete: existingData.initial_scan_complete,
-            giveaways: existingData.giveaways};
-        await fs.mkdir(outputPath, { recursive: true });
-        await fs.writeFile(jsonFile, JSON.stringify(outputData, null, 2));
-        console.log('Saved. Added ' + newCount + ' new GAs. Total: ' + outputData.total);
-    } else {
-        console.log('⭕ No new GAs found. File unchanged.');}}
+        } catch (err) {break;}}
+            
+    const outputData = {
+        last_updated: Date.now(),
+        total: Object.keys(existingData.giveaways).length,
+        initial_scan_complete: existingData.initial_scan_complete,
+        giveaways: existingData.giveaways};
+    await fs.mkdir(outputPath, { recursive: true });
+    await fs.writeFile(jsonFile, JSON.stringify(outputData, null, 2));
+}
 fetchGiveaways();
