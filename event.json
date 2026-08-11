@@ -3,14 +3,9 @@
   "promoTime":  "2026-03-14T00:00:00Z",
   "communityEvents": [
     {
-      "start": "2026-06-04T14:00:00Z",
-      "end": "2026-06-13T00:00:00Z",
-      "link": "https://alienwarearena.com/steam/community-event/path-of-exile-community-event-3"
-    },
-    {
-      "start": "2026-06-04T14:00:00Z",
-      "end": "2026-06-13T00:00:00Z",
-      "link": "https://alienwarearena.com/steam/community-event/warframe-community-event-6"
+      "start": "2026-08-07T00:00:00Z",
+      "end": "2026-08-21T00:00:00Z",
+      "link": "https://alienwarearena.com/steam/community-event/old-school-runescape-community-event-2"
     }
   ]
 }
