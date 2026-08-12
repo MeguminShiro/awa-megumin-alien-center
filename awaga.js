@@ -52,30 +52,38 @@ async function fetchGiveaways() {
         if (!existingData.giveaways) existingData.giveaways = {};
         for (const id in existingData.giveaways) {
             let item = existingData.giveaways[id];
-            let changed = false;
-            if (item.url) { delete item.url; changed = true; }
-            if (item.type) { delete item.type; changed = true; }
-            if (item.status) { delete item.status; changed = true; }
-            if (item.id !== undefined) { delete item.id; changed = true; }
-            if (item.tier === 0 || item.tier === '0') { delete item.tier; changed = true; }
-            if (item.arp === 0 || item.arp === '0') { delete item.arp; changed = true; }
+            if (item.url) delete item.url;
+            if (item.type) delete item.type;
+            if (item.status) delete item.status;
+            if (item.id !== undefined) delete item.id;
+            if (item.tier === 0 || item.tier === '0') delete item.tier;
+            if (item.arp === 0 || item.arp === '0') delete item.arp;
             const newTitle = cleanTitle(item.title);
-            if (item.title !== newTitle) { item.title = newTitle; changed = true; }
+            if (item.title !== newTitle) item.title = newTitle;
         }
-    } catch (e) {}
+        console.log('Loaded ' + Object.keys(existingData.giveaways).length + ' existing GAs.');
+    } catch (e) {
+        console.log('No existing file. Starting fresh.');
+    }
     const fullScanDone = existingData.initial_scan_complete === true;
     let newCount = 0;
     while (page <= MAX_PAGES) {
         try {
-            const url = 'https://na.alienwarearena.com/esi/featured-tile-data/Giveaway/' + page;
-            const res = await fetch(url, {
+            const fetchUrl = 'https://na.alienwarearena.com/esi/featured-tile-data/Giveaway/' + page;
+            console.log('Fetching page ' + page + '...');
+            const res = await fetch(fetchUrl, {
                 headers: {
                     'accept': '*/*',
                     'x-requested-with': 'XMLHttpRequest',
                     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}});
-            if (!res.ok) break;
+            console.log('Page ' + page + ' status: ' + res.status);
+            if (!res.ok) {
+                console.log('Bad response on page ' + page + '. Stopping.');
+                break;
+            }
             const data = await res.json();
             const items = Array.isArray(data) ? data : (data.data || []);
+            console.log('Page ' + page + ' items: ' + items.length);
             if (items.length === 0) {
                 if (!fullScanDone) existingData.initial_scan_complete = true;
                 break;}
@@ -92,7 +100,10 @@ async function fetchGiveaways() {
             if (fullScanDone && !foundNewOnThisPage) break;
             page++;
             await new Promise(r => setTimeout(r, 1000));
-        } catch (err) {break;}}
+        } catch (err) {
+            console.log('Error on page ' + page + ': ' + err.message);
+            break;}}
+    console.log('Total new GAs added: ' + newCount);
     const outputData = {
         last_updated: Date.now(),
         total: Object.keys(existingData.giveaways).length,
@@ -100,5 +111,6 @@ async function fetchGiveaways() {
         giveaways: existingData.giveaways};
     await fs.mkdir(outputPath, { recursive: true });
     await fs.writeFile(jsonFile, JSON.stringify(outputData, null, 2));
+    console.log('Saved. Total: ' + outputData.total);
 }
 fetchGiveaways();
