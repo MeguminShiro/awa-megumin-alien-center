@@ -1,6 +1,6 @@
 {
-  "last_updated": 1786719173164,
-  "total": 840,
+  "last_updated": 1786722799495,
+  "total": 841,
   "initial_scan_complete": false,
   "giveaways": {
     "139166": {
@@ -3361,6 +3361,10 @@
     },
     "2175826": {
       "title": "Drop Loot Playtest",
+      "tier": "1+"
+    },
+    "2175827": {
+      "title": "Tape 101: Liminal Descent Playtest",
       "tier": "1+"
     }
   }
