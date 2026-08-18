@@ -1,6 +1,6 @@
 {
-  "last_updated": 1787067183024,
-  "total": 841,
+  "last_updated": 1787070760442,
+  "total": 843,
   "initial_scan_complete": false,
   "giveaways": {
     "139166": {
@@ -3365,6 +3365,14 @@
     },
     "2175827": {
       "title": "Tape 101: Liminal Descent Playtest",
+      "tier": "1+"
+    },
+    "2176051": {
+      "title": "Alienware Area 51 Desktop and Alienware 15 Laptop Discount Code",
+      "tier": "1+"
+    },
+    "2176052": {
+      "title": "Alienware Monitor Discount Code",
       "tier": "1+"
     }
   }
