@@ -1,6 +1,6 @@
 {
-  "last_updated": 1788355147859,
-  "total": 843,
+  "last_updated": 1788370806607,
+  "total": 844,
   "initial_scan_complete": false,
   "giveaways": {
     "139166": {
@@ -3373,6 +3373,10 @@
     },
     "2176052": {
       "title": "Alienware Monitor Discount Code",
+      "tier": "1+"
+    },
+    "2176109": {
+      "title": "Idle Champions 9th Anniversary Starter Pack",
       "tier": "1+"
     }
   }
