@@ -1,8 +1,44 @@
 {
-  "last_updated": 1788879431406,
-  "total": 844,
+  "last_updated": 1788891859401,
+  "total": 857,
   "initial_scan_complete": false,
   "giveaways": {
+    "139125": {
+      "title": "Vindictus VVIP Service Package",
+      "tier": "1+"
+    },
+    "139126": {
+      "title": "Stormthrone Starter Pack",
+      "tier": "1+"
+    },
+    "139133": {
+      "title": "D&D Neverwinter Master of Illusion Vanguard Pack",
+      "tier": "1+"
+    },
+    "139135": {
+      "title": "Black Desert Online 7-Day Guest Pass",
+      "tier": "4+"
+    },
+    "139141": {
+      "title": "Fiesta Online Starter Pack",
+      "tier": "1+"
+    },
+    "139148": {
+      "title": "Dungeon Defenders Alien Spectre",
+      "tier": "3+"
+    },
+    "139150": {
+      "title": "Winning Putt Starter Pack",
+      "tier": "1+"
+    },
+    "139160": {
+      "title": "Skyforge Starter Booster Pack",
+      "tier": "1+"
+    },
+    "139162": {
+      "title": "World of Tanks Bonus Code",
+      "tier": "2+"
+    },
     "139166": {
       "title": "Fractured Space Cadet Pack",
       "tier": "1+"
@@ -3367,6 +3403,10 @@
       "title": "Tape 101: Liminal Descent Playtest",
       "tier": "1+"
     },
+    "2175971": {
+      "title": "Doomspire",
+      "tier": "1+"
+    },
     "2176051": {
       "title": "Alienware Area 51 Desktop and Alienware 15 Laptop Discount Code",
       "tier": "1+"
@@ -3377,6 +3417,18 @@
     },
     "2176109": {
       "title": "Idle Champions 9th Anniversary Starter Pack",
+      "tier": "1+"
+    },
+    "2176139": {
+      "title": "SWAPMEAT",
+      "tier": "1+"
+    },
+    "2176140": {
+      "title": "Frog Sqwad",
+      "tier": "1+"
+    },
+    "2176141": {
+      "title": "SurfsUp Supporter",
       "tier": "1+"
     }
   }
