@@ -1,6 +1,6 @@
 {
-  "last_updated": 1789662267859,
-  "total": 857,
+  "last_updated": 1789675402210,
+  "total": 858,
   "initial_scan_complete": false,
   "giveaways": {
     "139125": {
@@ -3429,6 +3429,10 @@
     },
     "2176141": {
       "title": "SurfsUp Supporter",
+      "tier": "1+"
+    },
+    "2176243": {
+      "title": "Aniimo",
       "tier": "1+"
     }
   }
