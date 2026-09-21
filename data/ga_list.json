@@ -1,6 +1,6 @@
 {
-  "last_updated": 1789983699860,
-  "total": 858,
+  "last_updated": 1790007373593,
+  "total": 859,
   "initial_scan_complete": false,
   "giveaways": {
     "139125": {
@@ -3429,6 +3429,10 @@
     },
     "2176141": {
       "title": "SurfsUp Supporter",
+      "tier": "1+"
+    },
+    "2176236": {
+      "title": "RIDE 6 Welcome Bikes Pack",
       "tier": "1+"
     },
     "2176243": {
