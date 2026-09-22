@@ -1,6 +1,6 @@
 {
-  "last_updated": 1790087078389,
-  "total": 859,
+  "last_updated": 1790102029634,
+  "total": 860,
   "initial_scan_complete": false,
   "giveaways": {
     "139125": {
@@ -3405,6 +3405,10 @@
     },
     "2175971": {
       "title": "Doomspire",
+      "tier": "1+"
+    },
+    "2175972": {
+      "title": "Truck Town: Kids and Toddlers Driving Game",
       "tier": "1+"
     },
     "2176051": {
