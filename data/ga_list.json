@@ -1,6 +1,6 @@
 {
-  "last_updated": 1790176842534,
-  "total": 860,
+  "last_updated": 1790191807021,
+  "total": 861,
   "initial_scan_complete": false,
   "giveaways": {
     "139125": {
@@ -3433,6 +3433,10 @@
     },
     "2176141": {
       "title": "SurfsUp Supporter",
+      "tier": "1+"
+    },
+    "2176235": {
+      "title": "Warframe Igaro Syandana and Ice Colour Picker",
       "tier": "1+"
     },
     "2176236": {
