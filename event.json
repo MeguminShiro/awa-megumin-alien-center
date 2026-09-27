@@ -3,9 +3,14 @@
   "promoTime":  "2026-09-07T00:00:00Z",
   "communityEvents": [
     {
-      "start": "2026-08-07T00:00:00Z",
-      "end": "2026-08-21T10:00:00Z",
-      "link": "https://alienwarearena.com/steam/community-event/old-school-runescape-community-event-2"
+      "start": "2026-09-21T00:00:00Z",
+      "end": "2026-09-30T10:00:00Z",
+      "link": "https://alienwarearena.com/steam/community-event/aniimo-community-event"
+    },
+    {
+      "start": "2026-09-23T00:00:00Z",
+      "end": "2026-10-10T10:00:00Z",
+      "link": "https://alienwarearena.com/steam/community-event/warframe-community-event-7"
     }
   ]
 }
