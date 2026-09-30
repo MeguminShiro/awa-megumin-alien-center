@@ -1,6 +1,6 @@
 {
-  "last_updated": 1790765795906,
-  "total": 861,
+  "last_updated": 1790786592745,
+  "total": 862,
   "initial_scan_complete": false,
   "giveaways": {
     "139125": {
@@ -3445,6 +3445,10 @@
     },
     "2176243": {
       "title": "Aniimo",
+      "tier": "1+"
+    },
+    "2176285": {
+      "title": "Observer: System Redux",
       "tier": "1+"
     }
   }
