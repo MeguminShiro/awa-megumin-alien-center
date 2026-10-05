@@ -1,6 +1,6 @@
 {
-  "last_updated": 1791188976940,
-  "total": 862,
+  "last_updated": 1791223217152,
+  "total": 863,
   "initial_scan_complete": false,
   "giveaways": {
     "139125": {
@@ -3449,6 +3449,10 @@
     },
     "2176285": {
       "title": "Observer: System Redux",
+      "tier": "1+"
+    },
+    "2176306": {
+      "title": "Scallywags Early Playtest",
       "tier": "1+"
     }
   }
