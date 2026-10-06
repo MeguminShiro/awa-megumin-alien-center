@@ -1,6 +1,6 @@
 {
-  "last_updated": 1791314637980,
-  "total": 863,
+  "last_updated": 1791329864690,
+  "total": 864,
   "initial_scan_complete": false,
   "giveaways": {
     "139125": {
@@ -3454,6 +3454,10 @@
     "2176306": {
       "title": "Scallywags Early Playtest",
       "tier": "1+"
+    },
+    "2176307": {
+      "title": "Everwind Exclusive AW-51",
+      "arp": "10 ARP"
     }
   }
 }
