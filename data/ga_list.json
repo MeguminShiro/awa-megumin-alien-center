@@ -1,6 +1,6 @@
 {
-  "last_updated": 1791372879741,
-  "total": 864,
+  "last_updated": 1791397966605,
+  "total": 865,
   "initial_scan_complete": false,
   "giveaways": {
     "139125": {
@@ -3449,6 +3449,10 @@
     },
     "2176285": {
       "title": "Observer: System Redux",
+      "tier": "1+"
+    },
+    "2176286": {
+      "title": "Blair Witch",
       "tier": "1+"
     },
     "2176306": {
