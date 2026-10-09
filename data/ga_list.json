@@ -1,6 +1,6 @@
 {
-  "last_updated": 1791546119620,
-  "total": 865,
+  "last_updated": 1791569017408,
+  "total": 866,
   "initial_scan_complete": false,
   "giveaways": {
     "139125": {
@@ -3462,6 +3462,10 @@
     "2176307": {
       "title": "Everwind Exclusive AW-51",
       "arp": "10 ARP"
+    },
+    "2176356": {
+      "title": "Meltdown Playtest",
+      "tier": "1+"
     }
   }
 }
