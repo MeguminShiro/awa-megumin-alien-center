@@ -1,6 +1,6 @@
 {
-  "last_updated": 1791800470585,
-  "total": 866,
+  "last_updated": 1791835762157,
+  "total": 867,
   "initial_scan_complete": false,
   "giveaways": {
     "139125": {
@@ -3465,6 +3465,10 @@
     },
     "2176356": {
       "title": "Meltdown Playtest",
+      "tier": "1+"
+    },
+    "2176357": {
+      "title": "Vaultbreakers Alpha Starter Pack",
       "tier": "1+"
     }
   }
