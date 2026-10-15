@@ -1,6 +1,6 @@
 {
-  "last_updated": 1792069687514,
-  "total": 867,
+  "last_updated": 1792087386720,
+  "total": 868,
   "initial_scan_complete": false,
   "giveaways": {
     "139125": {
@@ -3470,6 +3470,10 @@
     "2176357": {
       "title": "Vaultbreakers Alpha Starter Pack",
       "tier": "1+"
+    },
+    "2176359": {
+      "title": "Cronos: The New Dawn",
+      "arp": "500 ARP"
     }
   }
 }
