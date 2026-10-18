@@ -1,8 +1,16 @@
 {
-  "last_updated": 1792328497811,
-  "total": 869,
+  "last_updated": 1792343196310,
+  "total": 872,
   "initial_scan_complete": false,
   "giveaways": {
+    "139114": {
+      "title": "Perfect World International Dreamchaser Package",
+      "tier": "1+"
+    },
+    "139118": {
+      "title": "Armored Warfare Starter Pack",
+      "tier": "3+"
+    },
     "139125": {
       "title": "Vindictus VVIP Service Package",
       "tier": "1+"
@@ -3469,6 +3477,10 @@
     },
     "2176357": {
       "title": "Vaultbreakers Alpha Starter Pack",
+      "tier": "1+"
+    },
+    "2176358": {
+      "title": "Dumb Ways to Build - Beach Breach Campaign",
       "tier": "1+"
     },
     "2176359": {
