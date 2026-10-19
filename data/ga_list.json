@@ -1,6 +1,6 @@
 {
-  "last_updated": 1792412470734,
-  "total": 872,
+  "last_updated": 1792436699154,
+  "total": 873,
   "initial_scan_complete": false,
   "giveaways": {
     "139114": {
@@ -3486,6 +3486,10 @@
     "2176359": {
       "title": "Cronos: The New Dawn",
       "arp": "500 ARP"
+    },
+    "2176394": {
+      "title": "HELLCARD",
+      "tier": "1+"
     },
     "2176395": {
       "title": "Fathom Reach Playtest",
