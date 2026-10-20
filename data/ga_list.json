@@ -1,6 +1,6 @@
 {
-  "last_updated": 1792507495187,
-  "total": 873,
+  "last_updated": 1792522719167,
+  "total": 874,
   "initial_scan_complete": false,
   "giveaways": {
     "139114": {
@@ -3493,6 +3493,10 @@
     },
     "2176395": {
       "title": "Fathom Reach Playtest",
+      "tier": "1+"
+    },
+    "2176399": {
+      "title": "Mimic Early Access",
       "tier": "1+"
     }
   }
