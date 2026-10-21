@@ -1,6 +1,6 @@
 {
-  "last_updated": 1792589467852,
-  "total": 874,
+  "last_updated": 1792607195336,
+  "total": 875,
   "initial_scan_complete": false,
   "giveaways": {
     "139114": {
@@ -3497,6 +3497,10 @@
     },
     "2176399": {
       "title": "Mimic Early Access",
+      "tier": "1+"
+    },
+    "2176449": {
+      "title": "Amnesia: The Bunker",
       "tier": "1+"
     }
   }
