@@ -1,6 +1,6 @@
 {
-  "last_updated": 1792675947027,
-  "total": 875,
+  "last_updated": 1792693300944,
+  "total": 876,
   "initial_scan_complete": false,
   "giveaways": {
     "139114": {
@@ -3502,6 +3502,10 @@
       "title": "Mimic Early Access",
       "tier": "1+",
       "arp": "10 ARP"
+    },
+    "2176440": {
+      "title": "DREGS",
+      "arp": "250 ARP"
     },
     "2176449": {
       "title": "Amnesia: The Bunker",
