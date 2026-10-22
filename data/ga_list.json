@@ -3469,6 +3469,7 @@
     },
     "2176307": {
       "title": "Everwind Exclusive AW-51",
+      "tier" : "1+",
       "arp": "10 ARP"
     },
     "2176356": {
@@ -3485,11 +3486,13 @@
     },
     "2176359": {
       "title": "Cronos: The New Dawn",
+      "tier": "1+",
       "arp": "500 ARP"
     },
     "2176394": {
       "title": "HELLCARD",
-      "tier": "1+"
+      "tier": "1+",
+      "arp": "200 ARP"
     },
     "2176395": {
       "title": "Fathom Reach Playtest",
@@ -3497,11 +3500,13 @@
     },
     "2176399": {
       "title": "Mimic Early Access",
-      "tier": "1+"
+      "tier": "1+",
+      "arp": "10 ARP"
     },
     "2176449": {
       "title": "Amnesia: The Bunker",
-      "tier": "1+"
+      "tier": "1+",
+      "arp": "500 ARP"
     }
   }
 }
