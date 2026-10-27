@@ -1,6 +1,6 @@
 {
-  "last_updated": 1793109817434,
-  "total": 876,
+  "last_updated": 1793130735512,
+  "total": 877,
   "initial_scan_complete": false,
   "giveaways": {
     "139114": {
@@ -3502,6 +3502,10 @@
       "title": "Mimic Early Access",
       "tier": "1+",
       "arp": "10 ARP"
+    },
+    "2176400": {
+      "title": "Layers of Fear",
+      "arp": "250 ARP"
     },
     "2176440": {
       "title": "DREGS",
