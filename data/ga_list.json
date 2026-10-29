@@ -1,6 +1,6 @@
 {
-  "last_updated": 1793266161725,
-  "total": 878,
+  "last_updated": 1793292042339,
+  "total": 879,
   "initial_scan_complete": false,
   "giveaways": {
     "139114": {
@@ -3519,6 +3519,10 @@
       "title": "Amnesia: The Bunker",
       "tier": "1+",
       "arp": "500 ARP"
+    },
+    "2176477": {
+      "title": "V Rising Sinister Evolution Cosmetic Pack",
+      "arp": "100 ARP"
     }
   }
 }
