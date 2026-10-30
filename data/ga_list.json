@@ -1,6 +1,6 @@
 {
-  "last_updated": 1793374662194,
-  "total": 879,
+  "last_updated": 1793392110651,
+  "total": 880,
   "initial_scan_complete": false,
   "giveaways": {
     "139114": {
@@ -3519,6 +3519,10 @@
       "title": "Amnesia: The Bunker",
       "tier": "1+",
       "arp": "500 ARP"
+    },
+    "2176476": {
+      "title": "Dead by Daylight 100k Bloodpoints",
+      "tier": "1+"
     },
     "2176477": {
       "title": "V Rising Sinister Evolution Cosmetic Pack",
