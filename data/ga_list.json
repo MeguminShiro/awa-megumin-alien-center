@@ -3457,7 +3457,8 @@
     },
     "2176285": {
       "title": "Observer: System Redux",
-      "tier": "1+"
+      "tier": "1+",
+      "arp": "100 ARP"
     },
     "2176286": {
       "title": "Blair Witch",
@@ -3505,14 +3506,17 @@
     },
     "2176400": {
       "title": "Layers of Fear",
+      "tier": "1+",
       "arp": "250 ARP"
     },
     "2176401": {
       "title": "The Medium",
+      "tier": "1+",
       "arp": "500 ARP"
     },
     "2176440": {
       "title": "DREGS",
+      "tier": "1+",
       "arp": "250 ARP"
     },
     "2176449": {
@@ -3522,10 +3526,12 @@
     },
     "2176476": {
       "title": "Dead by Daylight 100k Bloodpoints",
-      "tier": "1+"
+      "tier": "1+",
+      "arp": "10 ARP"
     },
     "2176477": {
       "title": "V Rising Sinister Evolution Cosmetic Pack",
+      "tier": "1+",
       "arp": "100 ARP"
     }
   }
