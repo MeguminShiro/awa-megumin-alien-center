@@ -1,6 +1,6 @@
 {
-  "last_updated": 1794312781551,
-  "total": 880,
+  "last_updated": 1794341827830,
+  "total": 884,
   "initial_scan_complete": false,
   "giveaways": {
     "139114": {
@@ -3533,6 +3533,22 @@
       "title": "V Rising Sinister Evolution Cosmetic Pack",
       "tier": "1+",
       "arp": "100 ARP"
+    },
+    "2176523": {
+      "title": "Aimlabs 30 Day Trial",
+      "arp": "5 ARP"
+    },
+    "2176524": {
+      "title": "The Spell Brigade",
+      "tier": "1+"
+    },
+    "2176541": {
+      "title": "Kettlebell: Inferno Hotel Exclusive Alienware Afterimage Effect",
+      "tier": "1+"
+    },
+    "2176545": {
+      "title": "RUNZ Playtest",
+      "tier": "1+"
     }
   }
 }
