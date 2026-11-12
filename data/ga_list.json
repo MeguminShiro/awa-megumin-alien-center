@@ -1,6 +1,6 @@
 {
-  "last_updated": 1794498513532,
-  "total": 884,
+  "last_updated": 1794521111870,
+  "total": 885,
   "initial_scan_complete": false,
   "giveaways": {
     "139114": {
@@ -3548,6 +3548,10 @@
     },
     "2176545": {
       "title": "RUNZ Playtest",
+      "tier": "1+"
+    },
+    "2176689": {
+      "title": "The Legend of California Closed Alpha",
       "tier": "1+"
     }
   }
